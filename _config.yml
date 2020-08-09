@@ -1,0 +1,70 @@
+# Site Info
+title: '정중식의 개발공부로그'
+tagline: '정중식의 개발공부로그'
+description: '공부하며 배운점과 느낀점을 기록하는 곳입니다.'
+baseurl: ""
+url: https://jungsikjeong.github.io/
+logo: '/public/logo.png'
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: JEONG JUNGSIK
+  description: 정중식(JEONG JUNGSIK)
+  contact:
+    # linkedin:  https://www.linkedin.com/in/lizhihao
+    github:    https://github.com/jungsikjeong
+    #facebook:  https://www.facebook.com/wayhome25
+    # twitter:   https://twitter.com/Li_Zhihao
+    # weibo:     http://weibo.com/41173780
+    email:    mailto:wndtlr1024@gmail.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/blog/'
+  Categories:
+    - '/'
+    # - { Categories All: '/blog/categories/' }
+    - { TIL (Today I Learned): '/blog/categories/#til' }
+    - { javascript: '/blog/categories/#javascript' }
+    - { react : '/blog/categories/#react' }
+    - { css : '/blog/categories/#css' }
+    - { git: '/blog/categories/#git' }
+    - { memo: '/blog/categories/#memo' }
+    - { nodejs: '/blog/categories/#nodejs' }
+    # - { Tags: '/blog/tags/' }
+  About:
+    - '/about/'
+  Search:
+    - '/search/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-92094009-1' # leave blank if you don't want google analytics
+disqus_short_name: 'jungsikjeong-github-io' # leave blank if you don't want disqus
+
+
+# Use the following plug-ins
+gems:
+  - jekyll-paginate
