@@ -8,7 +8,7 @@ comments: true
 
 # DevConnector 프로젝트 00 - 초기세팅
 
-> [유데미 강의](https://www.udemy.com/course/mern-stack-front-to-back/learn/lecture/10055140?start=225#overview)를 보며 만든 예제입니다. 영어로 듣고 화면만 보며 따라치고 잘 모르겠는 개념이 나오면 구글링후 메모하는 용도로 만들었습니다.<br>
+> [유데미 강의](https://www.udemy.com/course/mern-stack-front-to-back/learn/lecture/10055140?start=225#overview)를 보며 정리한 내용입니다. 영어로 듣고 화면만 보며 따라치고 잘 모르겠는 개념이 나오면 구글링후 메모하는 용도로 만들었습니다.<br>
 > 틀린 내용이 있다면 편하게 댓글로 알려주세요!
 
 ## 초기 세팅

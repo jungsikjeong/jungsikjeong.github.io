@@ -72,3 +72,5 @@ const onSubmit = async (e) => {
   에러메시지를 받아오는게 좀 생소했는데, 직접 console.log(err)를 찍어본 결과, err는 객체에는 헤더 및 기타 등등의 여러 데이터가 담겨있는데 그중에서 서버에서 에러메시지를 전달해주는 response객체안의 data가있었다.<br><br>
 
   받아올 때는 마찬가지로 res.data로 받아온다.
+
+> 이후 리덕스로 대체
