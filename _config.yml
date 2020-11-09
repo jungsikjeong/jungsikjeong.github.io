@@ -43,7 +43,7 @@ nav:
     # - { Categories All: '/blog/categories/' }
     - { TIL (Today I Learned): '/blog/categories/#til' }
     - { javascript: '/blog/categories/#javascript' }
-    - { instagram-clone: '/blog/categories/#instagram-clone' }
+    - { 인스타그램 클론: '/blog/categories/#instagram-clone' }
     - { react : '/blog/categories/#react' }
     - { css : '/blog/categories/#css' }
     - { git: '/blog/categories/#git' }
