@@ -4,5 +4,5 @@ title: About
 ---
 
 <p class="message">
-  안녕하세요🙂 반갑습니다:)
+  넌 잘하고있고 잘 할 수 있어
 </p>
