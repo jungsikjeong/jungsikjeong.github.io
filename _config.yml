@@ -41,8 +41,8 @@ nav:
   Categories:
     - '/'
     # - { Categories All: "/blog/categories/" }
-    - { debug: '/blog/categories/#debug' }
-    - { 메모: '/blog/categories/#memo' }
+    - { 디버그: '/blog/categories/#debug' }
+    - { 메모: '/blog/categories/#메모' }
     # - { javascript: "/blog/categories/#javascript" }
     # - { react: "/blog/categories/#react" }
     # - { css: "/blog/categories/#css" }
