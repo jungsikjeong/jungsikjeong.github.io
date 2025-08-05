@@ -42,7 +42,7 @@ nav:
     - '/'
     # - { Categories All: "/blog/categories/" }
     - { debug: '/blog/categories/#debug' }
-    - { 메모: '/blog/categories/#메모' }
+    - { 메모: '/blog/categories/#memo' }
     # - { javascript: "/blog/categories/#javascript" }
     # - { react: "/blog/categories/#react" }
     # - { css: "/blog/categories/#css" }
