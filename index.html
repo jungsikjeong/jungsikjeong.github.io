@@ -1,0 +1,175 @@
+---
+layout: default
+title: Home
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+      .category-title {
+        cursor: pointer;
+      }
+      .category-title:hover > h2 {
+        text-decoration: underline;
+      }
+      .tags-expo-posts {
+        display: block;
+      }
+      #shortcut {
+        font-size: 1.1rem;
+        color: rgba(49, 49, 49, 0.82);
+      }
+
+      #shortcut-img {
+        width: 30px;
+        display: inline;
+        margin-right: 9px;
+        vertical-align: -webkit-baseline-middle;
+      }
+
+      /* 더보기 버튼 새로운 스타일 */
+      .load-more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        margin: 20px auto;
+        padding: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+
+      .load-more:hover {
+        transform: translateY(3px);
+      }
+
+      .load-more svg {
+        width: 24px;
+        height: 24px;
+        fill: #666;
+        transition: fill 0.2s ease;
+      }
+
+      .load-more:hover svg {
+        fill: #333;
+      }
+
+      .hidden-post {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tags-expo">
+      <div class="tags-expo-list">
+        {% for tag in site.categories %}
+        <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+        {% endfor %}
+      </div>
+      <hr />
+
+      <div class="tags-expo-section">
+        <a href="/blog/">
+          <h4 id="shortcut">
+            <img id="shortcut-img" src="/assets/images/shortcut.png" />최근 글 바로가기
+          </h4>
+        </a>
+        <!-- 최근 글 섹션 수정 -->
+        <ul class="tags-expo-posts recent-posts">
+          {% for post in site.posts %}
+            {% if forloop.index <= 10 %}
+              <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+                <li>
+                  {{ post.title }}
+                  <small class="post-date">{{ post.date | date_to_string }}</small>
+                </li>
+              </a>
+            {% else %}
+              <a class="post-title hidden-post" href="{{ site.baseurl }}{{ post.url }}">
+                <li>
+                  {{ post.title }}
+                  <small class="post-date">{{ post.date | date_to_string }}</small>
+                </li>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        {% assign total_posts = site.posts | size %}
+        {% if total_posts > 10 %}
+          <button class="load-more" data-section="recent-posts" aria-label="더 보기">
+            <svg viewBox="0 0 24 24">
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+            </svg>
+          </button>
+        {% endif %}
+
+        {% for tag in site.categories %}
+        <a class="category-title">
+          <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+        </a>
+        <ul class="tags-expo-posts category-{{ tag[0] | slugify }}">
+          {% for post in tag[1] %}
+            {% if forloop.index <= 10 %}
+              <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+                <li>
+                  {{ post.title }}
+                  <small class="post-date">{{ post.date | date_to_string }}</small>
+                </li>
+              </a>
+            {% else %}
+              <a class="post-title hidden-post" href="{{ site.baseurl }}{{ post.url }}">
+                <li>
+                  {{ post.title }}
+                  <small class="post-date">{{ post.date | date_to_string }}</small>
+                </li>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        {% assign category_size = tag[1] | size %}
+        {% if category_size > 10 %}
+          <button class="load-more" data-section="category-{{ tag[0] | slugify }}" aria-label="더 보기">
+            <svg viewBox="0 0 24 24">
+              <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+            </svg>
+          </button>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // 카테고리 토글
+      $(".category-title").click(function () {
+        if ($(this).next().css("display") === "block") {
+          $(this).next().hide();
+          $(this).children().css("color", "#393939");
+        } else {
+          $(this).next().show();
+          $(this).children().css("color", "#ec4c6a");
+        }
+      });
+
+      // 더보기 기능 - 10개씩 보여주도록 수정
+      $(".load-more").click(function() {
+        const section = $(this).data("section");
+        const hiddenPosts = $(`.${section} .hidden-post:hidden`).slice(0, 10);
+        
+        hiddenPosts.show();
+        
+        if ($(`.${section} .hidden-post:hidden`).length === 0) {
+          $(this).fadeOut(300, function() {
+            $(this).remove();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

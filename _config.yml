@@ -1,0 +1,73 @@
+# @format
+
+# Site Info
+title: "앉는 데까지 성공"
+tagline: "앉았으니, 해보는 거죠"
+description: "피하고 싶은 마음을 넘기고, 남기고 싶은 것들을 적습니다"
+baseurl: ""
+url: https://jungsikjeong.github.io/
+logo: "/public/logo.png"
+
+# Site configurations
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: "/blog/page:num"
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: JEONG JUNGSIK
+  description: 정중식(JEONG JUNGSIK)
+  contact:
+    # linkedin:  https://www.linkedin.com/in/lizhihao
+    github: https://github.com/jungsikjeong
+    #facebook:  https://www.facebook.com/wayhome25
+    # twitter:   https://twitter.com/Li_Zhihao
+    # facebook: https://velog.io/@wndtlr1024
+    email: mailto:wndtlr1024@gmail.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - "/blog/"
+  Categories:
+    - "/"
+    - { Categories All: "/blog/categories/" }
+    - { debug: "/blog/categories/#debug" }
+    # - { javascript: "/blog/categories/#javascript" }
+    # - { react: "/blog/categories/#react" }
+    # - { css: "/blog/categories/#css" }
+    # - { git: "/blog/categories/#git" }
+    # - { memo: "/blog/categories/#memo" }
+    # - { nodejs: "/blog/categories/#nodejs" }
+    # - { typeScript: "/blog/categories/#typeScript" }
+    # - { nextjs: "/blog/categories/#nextjs" }
+    # - { firebase: "/blog/categories/#firebase" }
+    # - { Tags: '/blog/tags/' }
+  About:
+    - "/about/"
+  Search:
+    - "/search/"
+
+# Where are tags and categories displayed
+tag_page: "/blog/tags/"
+category_page: "/blog/categories/"
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: "UA-92094009-1" # leave blank if you don't want google analytics
+disqus_short_name: "jungsikjeong-github-io" # leave blank if you don't want disqus
+codepen_username: "정중식"
+
+# Use the following plug-ins
+plugins:
+  - jekyll-paginate
+timezone: Asia/Seoul
