@@ -40,7 +40,7 @@ nav:
     - "/blog/"
   Categories:
     - "/"
-    - { Categories All: "/blog/categories/" }
+    # - { Categories All: "/blog/categories/" }
     - { debug: "/blog/categories/#debug" }
     # - { javascript: "/blog/categories/#javascript" }
     # - { react: "/blog/categories/#react" }
