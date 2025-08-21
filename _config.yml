@@ -43,7 +43,7 @@ nav:
     # - { Categories All: "/blog/categories/" }
     - { 디버그: '/blog/categories/#디버그' }
     - { 메모: '/blog/categories/#메모' }
-    # - { javascript: "/blog/categories/#javascript" }
+    - { 타입스크립트: '/blog/categories/#타입스크립트' }
     # - { react: "/blog/categories/#react" }
     # - { css: "/blog/categories/#css" }
     # - { git: "/blog/categories/#git" }
