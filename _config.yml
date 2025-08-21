@@ -44,7 +44,7 @@ nav:
     - { 디버그: '/blog/categories/#디버그' }
     - { 메모: '/blog/categories/#메모' }
     - { 타입스크립트: '/blog/categories/#타입스크립트' }
-    - { WIL: '/blog/categories/#WIL(Weekly I Learned)' }
+    - { 'WIL(Weekly I Learned)': '/blog/categories/#WIL(Weekly I Learned)' }
     # - { css: "/blog/categories/#css" }
     # - { git: "/blog/categories/#git" }
     # - { memo: "/blog/categories/#memo" }
