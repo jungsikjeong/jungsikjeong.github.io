@@ -41,10 +41,10 @@ nav:
   Categories:
     - '/'
     # - { Categories All: "/blog/categories/" }
-    - { 디버그: '/blog/categories/#디버그' }
-    - { 메모: '/blog/categories/#메모' }
-    - { 타입스크립트: '/blog/categories/#타입스크립트' }
-    - { 'WIL(Weekly I Learned)': '/blog/categories/#WIL(Weekly I Learned)' }
+    - { debug: '/blog/categories/#debug' }
+    - { memo: '/blog/categories/#memo' }
+    - { typescript: '/blog/categories/#typescript' }
+    - { wil: '/blog/categories/#wil' }
     # - { css: "/blog/categories/#css" }
     # - { git: "/blog/categories/#git" }
     # - { memo: "/blog/categories/#memo" }
