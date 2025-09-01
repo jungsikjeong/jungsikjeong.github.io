@@ -45,7 +45,7 @@ nav:
     - { memo: '/blog/categories/#memo' }
     - { typescript: '/blog/categories/#typescript' }
     - { wil: '/blog/categories/#wil' }
-    # - { css: "/blog/categories/#css" }
+    - { nestjs: '/blog/categories/#nestjs' }
     # - { git: "/blog/categories/#git" }
     # - { memo: "/blog/categories/#memo" }
     # - { nodejs: "/blog/categories/#nodejs" }
