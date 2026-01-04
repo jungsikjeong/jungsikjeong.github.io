@@ -1,23 +1,23 @@
 # @format
 
 # Site Info
-title: '앉는 데까지 성공'
-tagline: '앉았으니, 해보는 거죠'
-description: '피하고 싶은 마음을 넘기고, 남기고 싶은 것들을 적습니다'
-baseurl: ''
+title: "wndtlr1024's Blog"
+tagline: "wndtlr1024"
+description: "Commit to myself"
+baseurl: ""
 url: https://jungsikjeong.github.io/
-logo: '/public/logo.png'
+logo: "/public/logo.png"
 
 # Site configurations
 markdown: kramdown
 kramdown:
   input: GFM
-excerpt_separator: '<!-- more -->'
+excerpt_separator: "<!-- more -->"
 sass:
   style: compressed
   sass_dir: _scss
 paginate: 5
-paginate_path: '/blog/page:num'
+paginate_path: "/blog/page:num"
 permalink: pretty
 
 version: 1.0.0
@@ -37,15 +37,15 @@ author:
 # Navigation (2nd level links supported)
 nav:
   Home:
-    - '/blog/'
+    - "/blog/"
   Categories:
-    - '/'
+    - "/"
     # - { Categories All: "/blog/categories/" }
-    - { debug: '/blog/categories/#debug' }
-    - { memo: '/blog/categories/#memo' }
-    - { typescript: '/blog/categories/#typescript' }
-    - { wil: '/blog/categories/#wil' }
-    - { nestjs: '/blog/categories/#nestjs' }
+    - { debug: "/blog/categories/#debug" }
+    - { memo: "/blog/categories/#memo" }
+    - { typescript: "/blog/categories/#typescript" }
+    - { wil: "/blog/categories/#wil" }
+    - { nestjs: "/blog/categories/#nestjs" }
     # - { git: "/blog/categories/#git" }
     # - { memo: "/blog/categories/#memo" }
     # - { nodejs: "/blog/categories/#nodejs" }
@@ -54,19 +54,19 @@ nav:
     # - { firebase: "/blog/categories/#firebase" }
     # - { Tags: '/blog/tags/' }
   About:
-    - '/about/'
+    - "/about/"
   Search:
-    - '/search/'
+    - "/search/"
 
 # Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
+tag_page: "/blog/tags/"
+category_page: "/blog/categories/"
 
 # Puglins
 mathjax: true # whether support mathjax
-google_analytics_token: 'G-50Q171KMMK'
-disqus_short_name: 'jungsikjeong-github-io' # leave blank if you don't want disqus
-codepen_username: '정중식'
+google_analytics_token: "G-50Q171KMMK"
+disqus_short_name: "jungsikjeong-github-io" # leave blank if you don't want disqus
+codepen_username: "정중식"
 
 # Use the following plug-ins
 plugins:
