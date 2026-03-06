@@ -46,6 +46,8 @@ nav:
     - { typescript: "/blog/categories/#typescript" }
     - { wil: "/blog/categories/#wil" }
     - { nestjs: "/blog/categories/#nestjs" }
+    - { todolist: "/blog/categories/#todolist" }
+
     # - { git: "/blog/categories/#git" }
     # - { memo: "/blog/categories/#memo" }
     # - { nodejs: "/blog/categories/#nodejs" }
